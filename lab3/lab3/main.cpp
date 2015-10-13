@@ -4,19 +4,19 @@
 
 using namespace std;
 
-void car::setsize(int a, int b, int c)
+void vehicle::setsize(int a, int b, int c)
 {
 	length = a;
 	width = b;
 	hight = c;
 }
 
-void car::setspeed(int a)
+void vehicle::setspeed(int a)
 {
 	maxspeed = a;
 }
 
-void car::setweight(int a)
+void vehicle::setweight(int a)
 {
 	weight = a;
 }
@@ -28,6 +28,7 @@ void car::setplaces(int a)
 
 void car::getinfo(engine& m)
 {
+	cout << endl;
 	cout << "lenth " << length << endl;
 	cout << "width " << width << endl;
 	cout << "hight " << hight << endl;
@@ -35,27 +36,12 @@ void car::getinfo(engine& m)
 	cout << "places " << numplaces << endl;
 	cout << "max speed " << maxspeed << endl;
 	m.getinfo1();
+	cout << endl << "===========================" << endl << endl;
 }
 
 /*===========================================================
 =============================================================*/
 
-void train::setsize(int a, int b, int c)
-{
-	length = a;
-	width = b;
-	hight = c;
-}
-
-void train::setspeed(int a)
-{
-	maxspeed = a;
-}
-
-void train::setweight(int a)
-{
-	weight = a;
-}
 
 void train::setwagons(int a)
 {
@@ -64,34 +50,19 @@ void train::setwagons(int a)
 
 void train::getinfo(wagon& m)
 {
+	cout << endl;
 	cout << "lenth " << length << endl;
 	cout << "width " << width << endl;
 	cout << "hight " << hight << endl;
 	cout << "weight " << weight << endl;
 	cout << "max speed " << maxspeed << endl;
 	m.getinfo1();
+	cout << endl << "===========================" << endl << endl;
 }
 
 
 /*==============================================================
 ================================================================*/
-
-void express::setsize(int a, int b, int c)
-{
-	length = a;
-	width = b;
-	hight = c;
-}
-
-void express::setspeed(int a)
-{
-	maxspeed = a;
-}
-
-void express::setweight(int a)
-{
-	weight = a;
-}
 
 void express::setplaces(int a)
 {
@@ -100,12 +71,14 @@ void express::setplaces(int a)
 
 void express::getinfo()
 {
+	cout << endl;
 	cout << "lenth " << length << endl;
 	cout << "width " << width << endl;
 	cout << "hight " << hight << endl;
 	cout << "weight " << weight << endl;
 	cout << "places " << numplaces << endl;
 	cout << "max speed " << maxspeed << endl;
+	cout << endl << "===========================" << endl << endl;
 }
 
 

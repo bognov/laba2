@@ -1,13 +1,17 @@
 #include <iostream>
 
 class vehicle
-{
+{ 
 protected:
 	int length;
 	int width;
 	int hight;
 	int weight;
 	int maxspeed;
+public:
+	void setsize(int, int, int);
+	void setspeed(int);
+	void setweight(int);
 };
 
 class car :
@@ -26,9 +30,6 @@ public:
 	int numplaces;
 	void setplaces(int);
 	void getinfo(engine& m);
-	void setsize(int, int, int);
-	void setspeed(int);
-	void setweight(int);
 };
 
 class train :
@@ -46,9 +47,6 @@ public:
 	};
 	int numwagons;
 	void getinfo(wagon& m);
-	void setsize(int, int, int);
-	void setspeed(int);
-	void setweight(int);
 	void setwagons(int);
 };
 
@@ -59,7 +57,4 @@ class express :
 public:
 	void setplaces(int);
 	void getinfo();
-	void setsize(int, int, int);
-	void setspeed(int);
-	void setweight(int);
 };

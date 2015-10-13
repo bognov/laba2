@@ -39,6 +39,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout << "volume ";
 	cin >> v;
 	A.setplaces(n);
+	
 	A.setsize(a[0], a[1], a[2]);
 	A.setspeed(m[0]);
 	A.setweight(m[1]);
@@ -70,7 +71,7 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	cout << "number of wagon";
 	cin >> i;
-	T.getinfo(W[i]);
+	T.getinfo(W[i-1]);
 
 	express EX;
 	setabc(a);
